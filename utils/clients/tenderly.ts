@@ -79,7 +79,7 @@ async function simulateNew(config: SimulationConfigNew): Promise<SimulationResul
     getTimelock(governorType, governorAddress),
   ])
 
-  const startBlock = BigNumber.from(latestBlock.number - 100) // arbitrarily subtract 100
+  const startBlock = BigNumber.from(latestBlock.number-1) // arbitrarily subtract 1 (previously subtracting 100 is giving issues with cross-chain messaging)
   const proposal: ProposalEvent = {
     id: proposalId, // Bravo governor
     proposalId, // OZ governor (for simplicity we just include both ID formats)
