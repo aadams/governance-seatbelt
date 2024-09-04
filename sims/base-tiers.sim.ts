@@ -39,7 +39,7 @@
      // _msg
      bps4EnableForward,
      // _minGasLimit 
-     100000000
+     1000000
    ])
 
 console.log({calldataTest})
@@ -83,7 +83,7 @@ console.log({calldataTest})
     signature: '',
     }
 
- const calls = [call1]
+ const calls = [call1, call2, call3]
  
  export const config: SimulationConfigNew = {
    type: 'new',
