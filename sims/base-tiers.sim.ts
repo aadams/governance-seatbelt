@@ -62,7 +62,7 @@ console.log({calldataTest})
         // _msg
         bps3EnableForward,
         // _minGasLimit 
-        8000000
+        1000000
         ]),
     value: 0,
     signature: '',
@@ -77,7 +77,7 @@ console.log({calldataTest})
         // _msg
         bps2EnableForward,
         // _minGasLimit 
-        8000000
+        1000000
     ]),
     value: 0,
     signature: '',
